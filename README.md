@@ -66,6 +66,16 @@ buff数据是如下结构的表：<br>
 | nStackNum | 层数
 | dwSkillSrcID | 造成这个buff的对象ID
 
+示例：假设要判断的buffid为123，目标对象为target<br>
+```Lua
+--获取目标的buff表
+local TargetBuff = s_util.GetBuffInfo(target)
+
+--是否有指定buff
+if TargetBuff[123] then
+ ...
+end
+```
 
 
 
