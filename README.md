@@ -8,7 +8,7 @@
     * 全局函数
     * Player对象
     * NPC对象
-    * 常量
+    * 枚举值和常量
   * 脚本
     * 移动
     * 交互
@@ -48,15 +48,15 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 
 ### NPC对象
 
-### 常量
+### 枚举值和常量
 
 ---
 #### TARGET
+ * NO_TARGET : 没有目标
+ * NPC : 目标是NPC
+ * PLAYER : 目标是玩家
+ * DOODAD : 目标是DOODAD
 
-| NO_TARGET | 没有目标 |
-| NPC | NPC |
-| PLAYER | 玩家 |
-| DOODAD | DOODAD |
 
 
 
