@@ -45,6 +45,13 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 示例： local player = GetClientPlayer()<br>
 
 ---
+#### s_util.GetTarget
+描述：获取对象的当前目标。
+1个参数：
+2个返回值：没有目标返回nil。否则返回目标对象，目标对象类型（[TARGET]#TARGET 类型的枚举值）。
+示例：local target, targetClass = s_util.GetTarget(player)
+
+---
 #### IsEnemy
 描述：判断两个对象是不是敌对关系<br>
 2个参数：NPC或玩家对象ID, NPC或玩家对象ID<br>
@@ -103,6 +110,12 @@ end
 ```
 `注意：判断buff数据的其他信息之前必须先判断有没有这个buff，否则Lua会报错试图索引一个nil值。`
 
+---
+#### s_util.GetDistance
+描述：返回两个对象之间的距离。
+2个参数：对象1，对象2。<br>
+1个返回值：距离（尺）。
+示例：local distance = s_util.GetDistance(player, target)
 
 
 ### Player对象
