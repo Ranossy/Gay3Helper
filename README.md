@@ -52,10 +52,11 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 
 ---
 #### s_util.GetBuffInfo
-描述：返回指定对象的buff数据表。
-1个参数：Player或者NPC对象。
-1个返回值：buff数据表。键是buffid，值是指定id的buff数据。
-buff数据是如下结构的表：
+描述：返回指定对象的buff数据表。<br>
+1个参数：Player或者NPC对象。<br>
+1个返回值：buff数据表。键是buffid，值是指定id的buff数据。<br>
+buff数据是如下结构的表：<br>
+
 | 键 | 值
 | --- | ---
 | dwID | buffid
