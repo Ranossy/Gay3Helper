@@ -48,7 +48,7 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 #### s_util.GetTarget
 描述：获取对象的当前目标。<br>
 1个参数：对象。<br>
-2个返回值：没有目标返回nil。否则返回目标对象，目标对象类型（[TARGET](####TARGET) 类型的枚举值）。<br>
+2个返回值：没有目标返回nil。否则返回目标对象，目标对象类型（[TARGET](#TARGET) 类型的枚举值）。<br>
 示例：local target, targetClass = s_util.GetTarget(player)<br>
 
 ---
