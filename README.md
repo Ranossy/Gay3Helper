@@ -30,11 +30,15 @@
 游戏中有三类对象。<br>
 Player：自己和其他玩家。<br>
 Doodad：可采集的矿、草、任务物品等等。<br>
-NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的效果，比如地刺之类的。一部分NPC没有名字。
+NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的效果，比如地刺之类的。一部分NPC没有名字。<br>
+编写宏重点关注的是Player和NPC对象。
 
 
 ### 全局函数
-####  
+####  GetClientPlayer
+没有参数。<br>
+1一个返回值：自己控制的Player对象。如果尚未进入游戏返回nil。<br>
+
 ####
 
 ### Player对象
