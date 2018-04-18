@@ -21,7 +21,7 @@
 宏是一个lua脚本，载入之后会编译为一个Lua函数。绑定之后，每次按下快捷键就会执行一次这个函数。
 
 ### Lua基础
-http://www.runoob.com/lua/lua-tutorial.html
+[Lua教程](http://www.runoob.com/lua/lua-tutorial.html)
 ### 全局函数
 
 ### Player对象
