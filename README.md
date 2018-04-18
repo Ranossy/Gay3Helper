@@ -52,10 +52,11 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 
 ---
 #### TARGET
+
 |NO_TARGET|没有目标|
 |NPC|NPC|
 |PLAYER|玩家|
-|DOODAD|DOODAD|
+|DOODAD|DOODAD
 
 
 
