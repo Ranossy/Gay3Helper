@@ -38,6 +38,8 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 ####  GetClientPlayer
 没有参数。<br>
 1一个返回值：自己控制的Player对象。如果尚未进入游戏返回nil。<br>
+示例： local player = GetClientPlayer()<br>
+
 
 ####
 
