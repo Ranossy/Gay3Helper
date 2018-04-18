@@ -18,10 +18,11 @@
     * 帮会
 
 ## 宏
-宏是一个lua脚本，载入之后会编译为一个Lua函数。绑定之后，每次按下快捷键就会执行一次这个函数。
+宏是一个lua脚本，所以要编写宏，需要了解Lua编程语言的基础知识。宏载入（绑定）后会编译为一个Lua函数，每次按下快捷键就会执行一次这个函数。
 
 ### Lua基础
-[Lua教程](http://www.runoob.com/lua/lua-tutorial.html)
+参考[Lua教程](http://www.runoob.com/lua/lua-tutorial.html)，重点看数据类型、变量、流程控制、运算符、表等内容，后面的不用看了。
+其他参考资料：Lua程序设计（第2版）
 ### 全局函数
 
 ### Player对象
