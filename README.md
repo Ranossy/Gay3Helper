@@ -66,16 +66,42 @@ buff数据是如下结构的表：<br>
 | nStackNum | 层数
 | dwSkillSrcID | 造成这个buff的对象ID
 
-示例：假设要判断的buffid为123，目标对象为target<br>
+示例：假设要判断的buffid为123，目标对象为target，我的对象为player<br>
 ```Lua
 --获取目标的buff表
 local TargetBuff = s_util.GetBuffInfo(target)
 
---是否有指定buff
+--如果有指定buff
 if TargetBuff[123] then
  ...
 end
+
+--如果没有指定buff
+if not TargetBuff[123] then
+ ...
+end
+
+--没有指定buff或者不是我造成的
+if not TargetBuff[123] or TargetBuff[123].dwSkillSrcID ~= player.dwID then
+ ...
+end
+
+--有指定buff，并且层数大于3
+if TargetBuff[123] and TargetBuff[123].nStackNum > 3 then
+ ...
+end
+
+--有指定buff并且剩余时间大于1.5秒
+if TargetBuff[123] and TargetBuff[123].nLeftTime > 1.5 then
+ ...
+end
+
+--没有指定buff，或者剩余时间小于等于0.5秒，或者不是我造成的
+if not TargetBuff[123] or TargetBuff[123].nLeftTime <= 0.5 or TargetBuff[123].dwSkillSrcID ~= player.dwID then
+ ...
+end
 ```
+`注意：判断buff数据的其他信息之前必须先判断有没有这个buff，否则Lua会报错试图索引一个nil值。`
 
 
 
