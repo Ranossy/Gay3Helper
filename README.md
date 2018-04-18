@@ -56,14 +56,14 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 1个参数：Player或者NPC对象。
 1个返回值：buff数据表。键是buffid，值是指定id的buff数据。
 buff数据是如下结构的表：
-|键|值
-|---|---
-|dwID|buffid
-|nLevel|buff等级
-|bCanCancel|是否能取消
-|nLeftTime|剩余时间(秒)
-|nStackNum|层数
-|dwSkillSrcID|造成这个buff的对象ID
+| 键 | 值
+| --- | ---
+| dwID | buffid
+| nLevel | buff等级
+| bCanCancel | 是否能取消
+| nLeftTime | 剩余时间(秒)
+| nStackNum | 层数
+| dwSkillSrcID | 造成这个buff的对象ID
 
 
 
