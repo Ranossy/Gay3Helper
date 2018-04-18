@@ -39,9 +39,17 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 
 ---
 #### GetClientPlayer
+描述：获取自己控制的Player对象。
 没有参数。<br>
-1一个返回值：自己控制的Player对象。如果尚未进入游戏返回nil。<br>
+1个返回值：Player对象。如果尚未进入游戏返回nil。<br>
 示例： local player = GetClientPlayer()<br>
+
+---
+#### IsEnemy
+描述：判断两个对象是不是敌对关系<br>
+2个参数：NPC或玩家对象ID, NPC或玩家对象ID<br>
+1个返回值：是敌对返回true，否则返回false<br>
+
 
 
 ### Player对象
