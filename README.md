@@ -49,13 +49,20 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 描述：获取对象的当前目标。<br>
 1个参数：对象。<br>
 2个返回值：没有目标返回nil。否则返回目标对象，目标对象类型（[TARGET](#TARGET) 类型的枚举值）。<br>
-示例：local target, targetClass = s_util.GetTarget(player)<br>
-
+示例：
+```Lua
+--有目标并且目标是玩家
+local target, targetClass = s_util.GetTarget(player)
+if target and targetClass == TARGET.PLAYER then
+ ...
+end
+```
 ---
 #### IsEnemy
 描述：判断两个对象是不是敌对关系<br>
 2个参数：NPC或玩家对象ID, NPC或玩家对象ID<br>
 1个返回值：是敌对返回true，否则返回false<br>
+示例：if IsEnemy(player.dwID, target.dwID) then ... end
 
 ---
 #### s_util.GetBuffInfo
@@ -112,10 +119,41 @@ end
 
 ---
 #### s_util.GetDistance
-描述：返回两个对象之间的距离。
+描述：返回两个对象之间的距离。<br>
 2个参数：对象1，对象2。<br>
-1个返回值：距离（尺）。
+1个返回值：距离（尺）。<br>
 示例：local distance = s_util.GetDistance(player, target)
+
+---
+#### s_util.GetNpc
+描述：获取一个指定类型的NPC。<br>
+2个参数：NPC模板ID， 范围（单位：尺，缺省值20）。<br>
+1个返回值：NPC对象。没有指定类型NPC，返回nil。<br>
+示例：<br>
+```
+--获取扬州接秘境任务那个牌子的NPC对象
+local npc_mjrw = s_util.GetNpc(869)
+```
+
+---
+#### s_util.OutputTip
+描述：输出提示信息<br>
+2个参数：文本串，颜色（1黄色 2红色 缺省为1）<br>
+没有返回值。<br>
+示例：s_util.OutputTip("基友们，大家好。")<br>
+
+---
+#### s_util.GetSkillCN
+描述：获取充能技能可使用次数和冷却剩余时间<br>
+1个参数：技能ID<br>
+2个返回值：可使用次数，冷却剩余时间（单位：秒）<br>
+示例：
+```Lua
+--如果盾击可使用次数大于0
+if s_util.GetSkillCN(13047) > 0 then ... end
+```
+---
+
 
 
 ### Player对象
