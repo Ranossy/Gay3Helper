@@ -242,10 +242,14 @@ local puppet = s_util.GetPuppet()
 | nCurrentMoonEnergy | 月灵（是看到的100倍）
 | nSunPowerValue | 满日（大于0满，否则不满）
 | nMoonPowerValue | 满月（大于0满，否则不满）
-| nMoveState | 移动状态（[MOVE_STATE](#MOVE_STATE)枚举值）
-| dwForceID | 门派ID（[FORCE_TYPE](#FORCE_TYPE)枚举值）
+| nMoveState | 移动状态（[MOVE_STATE](#move_state)枚举值）
+| dwForceID | 门派ID（[FORCE_TYPE](#force_type)枚举值）
 | bFightState | 是否战斗状态
-| 
+| szName | 名字
+| nLevel | 等级
+| nX | x坐标
+| nY | y坐标
+| nZ | z坐标
 
 ### NPC对象
 | 成员变量 | 描述
@@ -257,8 +261,13 @@ local puppet = s_util.GetPuppet()
 | nCurrentMana | 当前内力
 | nMaxMana | 最大内力
 | nLevel | 等级
+| bFightState | 是否战斗状态
 | szName | 名字
 | nIntensity | 强度
+| nMoveState | 移动状态（[MOVE_STATE](#move_state)枚举值）
+| nX | x坐标
+| nY | y坐标
+| nZ | z坐标
 
 
 ### 枚举值和常量
