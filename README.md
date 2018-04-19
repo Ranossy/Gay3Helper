@@ -1,6 +1,6 @@
 宏和脚本编写说明
 ====================================
-软件下载 https://pan.baidu.com/s/18cC8pGu64OkRCpwdxlsxyA
+配套软件下载 https://pan.baidu.com/s/18cC8pGu64OkRCpwdxlsxyA
 
 ## 目录
   * 宏
