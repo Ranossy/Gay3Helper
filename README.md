@@ -242,6 +242,7 @@ local puppet = s_util.GetPuppet()
 | nSunPowerValue | 满日（大于0满，否则不满）
 | nMoonPowerValue | 满月（大于0满，否则不满）
 | nMoveState | 移动状态（[MOVE_STATE](#MOVE_STATE)枚举值）
+| dwForceID | 门派（[FORCE_TYPE](#FORCE_TYPE)枚举值）
 
 
 
@@ -297,6 +298,27 @@ local puppet = s_util.GetPuppet()
 | ON_FLY_FLOAT | 未确认
 | ON_FLY_JUMP | 未确认
 | ON_DASH_TO_POSITION | 未确认
+
+---
+#### FORCE_TYPE
+| 成员 | 描述
+| --- | ---
+| JIANG_HU | 大侠
+| SHAO_LIN | 少林
+| WAN_HUA | 万花
+| TIAN_CE | 天策
+| CHUN_YANG | 纯阳
+| QI_XIU | 七秀
+| WU_DU | 五毒
+| TANG_MEN | 唐门
+| CANG_JIAN | 藏剑
+| GAI_BANG | 丐帮
+| MING_JIAO | 明教
+| CANG_YUN | 苍云
+| CHANG_GE | 长歌
+| BA_DAO | 霸刀
+
+---
 
 
 ## 脚本
