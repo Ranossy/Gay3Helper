@@ -242,11 +242,23 @@ local puppet = s_util.GetPuppet()
 | nSunPowerValue | 满日（大于0满，否则不满）
 | nMoonPowerValue | 满月（大于0满，否则不满）
 | nMoveState | 移动状态（[MOVE_STATE](#MOVE_STATE)枚举值）
-| dwForceID | 门派（[FORCE_TYPE](#FORCE_TYPE)枚举值）
-
-
+| dwForceID | 门派ID（[FORCE_TYPE](#FORCE_TYPE)枚举值）
+| bFightState | 是否战斗状态
+| 
 
 ### NPC对象
+| 成员变量 | 描述
+| --- | ---
+| dwID | 对象ID
+| dwTemplateID | 模板ID
+| nCurrentLife | 当前气血
+| nMaxLife | 最大气血
+| nCurrentMana | 当前内力
+| nMaxMana | 最大内力
+| nLevel | 等级
+| szName | 名字
+| nIntensity | 强度
+
 
 ### 枚举值和常量
 
