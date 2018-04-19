@@ -225,7 +225,7 @@ local puppet = s_util.GetPuppet()
 没有返回值。
 
 ### Player对象
-自己和其他玩家都是Player对象。以下示例假设变量player是一个Player对象。
+自己和其他玩家都是Player对象。以下示例假设变量player是一个Player对象。<br>
 | 成员变量 | 描述
 | --- | ---
 | dwID | 对象ID
