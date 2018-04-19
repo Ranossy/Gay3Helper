@@ -188,10 +188,61 @@ end
 说明：第二个参数对于不同类型的技能含义不同。对于需要选择一个位置施放的技能（比如唐门的天绝地灭，纯阳的气场等），如果为true是在自己的位置施放，如果为false是在目标位置施放。对于需要选择一个目标的增益技能（比如奶妈的加血技能），如果为true是对自己施放，如果为false是对目标释放。其他的普通攻击技能这个参数都应该为false.
 
 ---
+#### GetSkillOTActionState
+描述：获取对象读条数据。<br>
+1个参数：Player或NPC对象。<br>
+5个返回值：是否在读条，技能ID，等级，剩余时间(秒)，动作类型<br>
+示例：
+```Lua
+--获取目标的读条数据
+local bPrepare, dwSkillId, dwLevel, nLeftTime, nActionState =  GetSkillOTActionState(target)
+```
 
+---
+### s_util.UseItem
+描述：使用背包物品。<br>
+2个参数：id1，id2。<br>
+1个返回值：成功true，否则false。（不成功的原因可能是没有该物品或者物品还没冷却）<br>
+示例：
+```Lua
+--
+```
 
+---
+#### s_util.GetPuppet
+描述：获取唐门千机变的模板ID。<br>
+没有参数。<br>
+1个返回值：千机变模板ID。没有千机变返回nil。<br>
+示例：
+```Lua
+local puppet = s_util.GetPuppet()
+```
+
+---
+#### Jump
+描述：跳（和按下空格效果相同）。
+没有参数。
+没有返回值。
 
 ### Player对象
+自己和其他玩家都是Player对象。以下示例假设变量player是一个Player对象。
+| 成员变量 | 描述
+| --- | ---
+| dwID | 对象ID
+| nCurrentLife | 当前气血
+| nMaxLife | 最大气血
+| nCurrentMana | 当前内力
+| nMaxMana | 最大内力
+| nCurrentRage | 霸刀狂意
+| nCurrentEnergy | 霸刀刀魂
+| nAccumulateValue | 少林禅那，纯阳气点，七秀剑舞层数
+| nCurrentSunEnergy | 日灵（是看到的100倍），霸刀气劲
+| nCurrentMoonEnergy | 月灵（是看到的100倍）
+| nSunPowerValue | 满日（大于0满，否则不满）
+| nMoonPowerValue | 满月（大于0满，否则不满）
+| nMoveState | 移动状态（[MOVE_STATE]#MOVE_STATE枚举值）
+
+
 
 ### NPC对象
 
@@ -199,12 +250,52 @@ end
 
 ---
 #### TARGET
- * NO_TARGET : 没有目标
- * NPC : 目标是NPC
- * PLAYER : 目标是玩家
- * DOODAD : 目标是DOODAD
+| 成员 | 描述
+| --- | ---
+| NO_TARGET | 没有目标
+| NPC | 目标是NPC
+| PLAYER | 目标是玩家
+| DOODAD | 目标是DOODAD
 
-
+---
+#### MOVE_STATE
+| 成员 | 描述
+| --- | ---
+| INVALID | 未知状态
+| ON_STAND | 站着不动
+| ON_WALK | 走路
+| ON_RUN | 跑步
+| ON_JUMP | 跳跃
+| ON_SWIM_JUMP | 水中跳跃
+| ON_SWIM | 游泳
+| ON_FLOAT | 水中漂浮
+| ON_SIT | 坐下
+| ON_KNOCKED_DOWN | 被击倒
+| ON_KNOCKED_BACK | 被击退
+| ON_KNOCKED_OFF | 被击飞
+| ON_HALT | 眩晕
+| ON_FREEZE | 定身
+| ON_ENTRAP | 锁足
+| ON_AUTO_FLY | 乘坐交通工具
+| ON_DEATH | 重伤
+| ON_DASH | 冲刺
+| ON_PULL | 被抓
+| ON_REPULSED | 滑行
+| ON_RISE | 爬起
+| ON_SKID | 滑行
+| ON_SPRINT_BREAK | 使用轻功
+| ON_SPRINT_DASH | 使用轻功
+| ON_SPRINT_KICK | 使用轻功
+| ON_SPRINT_FLASH | 使用轻功
+| ON_SKILL_MOVE_SRC | 攻击位移状态
+| ON_SKILL_MOVE_DST | 被攻击位移状态
+| ON_SKILL_MOVE_TAIL | 技能收招状态
+| ON_SKILL_MOVE_DEATH | 
+| ON_START_AUTO_FLY | 正在开始乘坐交通工具
+| ON_FLY | 飞行
+| ON_FLY_FLOAT | 未确认
+| ON_FLY_JUMP | 未确认
+| ON_DASH_TO_POSITION | 未确认
 
 
 ## 脚本
