@@ -153,6 +153,41 @@ local npc_mjrw = s_util.GetNpc(869)
 if s_util.GetSkillCN(13047) > 0 then ... end
 ```
 ---
+#### s_util.GetSkillOD
+描述：获取透支技能可使用次数。<br>
+1个参数：技能ID。<br>
+1个返回值：剩余透支次数。<br>
+示例：
+```Lua
+--如果雷走风切剩余透支次数大于1
+if s_util.GetSkillOD(16629) > 1 then
+ ...
+end
+```
+---
+#### s_util.GetSkillCD
+描述：获取技能冷却剩余时间。<br>
+1个参数：技能ID。<br>
+1个返回值：冷却剩余时间（单位：秒）。<br>
+示例：
+```Lua
+--如果闹须弥已经冷却
+if s_util.GetSkillCD(17057) <= 0 then
+ ...
+end
+```
+---
+#### s_util.CastSkill
+描述：施放技能。<br>
+3个参数：技能ID，是否对自己施放，是否不判断读条（可选，如果为true和fcast效果一样，缺省为false）<br>
+1个返回值：释放成功返回true，否则返回false。<br>
+示例：
+```Lua
+--
+```
+说明：第二个参数对于不同类型的技能含义不同。对于需要选择一个位置施放的技能（比如唐门的天绝地灭，纯阳的气场等），如果为true是在自己的位置施放，如果为false是在目标位置施放。对于需要选择一个目标的增益技能（比如奶妈的加血技能），如果为true是对自己施放，如果为false是对目标释放。其他的普通攻击技能这个参数都应该为false.
+
+---
 
 
 
