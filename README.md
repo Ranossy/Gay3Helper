@@ -39,6 +39,20 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 ### 全局函数
 
 ---
+#### s_Output
+描述：向控制台输出信息<br>
+参数：任意。<br>
+没有返回值。<br>
+示例：
+```Lua
+--项控制台输出我的名字和等级
+local player = GetClientPlayer()
+if not player then return end
+
+s_Output(player.szName, player.nLevel)
+```
+
+---
 #### GetClientPlayer
 描述：获取自己控制的Player对象。<br>
 没有参数。<br>
