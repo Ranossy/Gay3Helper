@@ -256,6 +256,7 @@ local puppet = s_util.GetPuppet()
 | nCurrentMoonEnergy | 月灵（是看到的100倍）
 | nSunPowerValue | 满日（大于0满，否则不满）
 | nMoonPowerValue | 满月（大于0满，否则不满）
+| nPoseState | 姿态（[POSE_TYPE](#pose_type)枚举值）
 | nMoveState | 移动状态（[MOVE_STATE](#move_state)枚举值）
 | dwForceID | 门派ID（[FORCE_TYPE](#force_type)枚举值）
 | bFightState | 是否战斗状态
@@ -355,6 +356,20 @@ local puppet = s_util.GetPuppet()
 | BA_DAO | 霸刀
 
 ---
+#### POSE_TYPE
+| 成员 | 描述
+| --- | ---
+| SWORD | 苍云 擎刀
+| SHIELD | 苍云 擎盾
+| GAOSHANLIUSHUI | 长歌 高山流水
+| YANGCUNBAIXUE | 长歌 阳春白雪
+| PINGSHALUOYAN | 长歌 平沙落雁
+| MEIHUASHANNONG | 长歌 梅花三弄
+| BROADSWORD | 霸刀 秀明尘身
+| SHEATH_KNIFE | 霸刀 雪絮金屏
+| DOUBLE_BLADE | 霸刀 松烟竹雾
+
+
 
 ## 脚本
 脚本和宏是不同概念，脚本是一个文本文件，是按行执行的，每次执行一行，每行只能有一条命令。一个命令执行完了，才会下一行。
