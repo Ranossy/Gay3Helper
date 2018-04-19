@@ -214,6 +214,21 @@ local bPrepare, dwSkillId, dwLevel, nLeftTime, nActionState =  GetSkillOTActionS
 ```
 
 ---
+#### s_util.StopSkill
+描述：打断技能读条。<br>
+没有参数。<br>
+没有返回值。<br>
+示例：
+```Lua
+--获取自己读条数据
+local bPrepare, dwSkillId, dwLevel, nLeftTime, nActionState =  GetSkillOTActionState(player)
+--如果在读条打断读条
+if bPrepare then
+ s_util.StopSkill()
+end
+```
+
+---
 ### s_util.UseItem
 描述：使用背包物品。<br>
 2个参数：id1，id2。<br>
