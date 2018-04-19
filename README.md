@@ -3,14 +3,14 @@
 配套软件下载 https://pan.baidu.com/s/18cC8pGu64OkRCpwdxlsxyA
 
 ## 目录
-  * 宏
+  * [宏](#宏)
     * Lua基础
     * 基本概念
     * 全局函数
     * Player对象
     * NPC对象
     * 枚举值和常量
-  * 脚本
+  * [脚本](#脚本)
     * 移动
     * 交互
     * 任务
