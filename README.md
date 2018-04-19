@@ -225,7 +225,8 @@ local puppet = s_util.GetPuppet()
 没有返回值。
 
 ### Player对象
-自己和其他玩家都是Player对象。以下示例假设变量player是一个Player对象。<br>
+自己和其他玩家都是Player对象。以下示例假设变量player是一个Player对象。
+
 | 成员变量 | 描述
 | --- | ---
 | dwID | 对象ID
@@ -240,7 +241,7 @@ local puppet = s_util.GetPuppet()
 | nCurrentMoonEnergy | 月灵（是看到的100倍）
 | nSunPowerValue | 满日（大于0满，否则不满）
 | nMoonPowerValue | 满月（大于0满，否则不满）
-| nMoveState | 移动状态（[MOVE_STATE]#MOVE_STATE枚举值）
+| nMoveState | 移动状态（[MOVE_STATE](#MOVE_STATE)枚举值）
 
 
 
