@@ -1,7 +1,7 @@
 宏和脚本编写说明
 ====================================
-配套软件下载 https://pan.baidu.com/s/18cC8pGu64OkRCpwdxlsxyA
-扣扣群：511064247
+配套软件下载 https://pan.baidu.com/s/18cC8pGu64OkRCpwdxlsxyA<br>
+扣扣群：511064247<br>
 
 ## 目录
   * [宏](#宏)
