@@ -46,7 +46,7 @@ NPC：除玩家和Doodad外都是NPC。包括BOSS和玩家释放技能之后的�
 没有返回值。<br>
 示例：
 ```Lua
---项控制台输出我的名字和等级
+--向控制台输出我的名字和等级
 local player = GetClientPlayer()
 if not player then return end
 
