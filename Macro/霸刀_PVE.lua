@@ -1,4 +1,3 @@
-```Lua
 --奇穴：[虎踞][滄雪][疏狂][化蛟][含風][逐鹿][斬紛][星火][楚歌][絕期][冷川][心鏡]
 --秘籍：项王击鼎回狂，刀啸风吟回气劲是必须的
 --作者：还珠楼主
@@ -136,4 +135,3 @@ if player.nPoseState == POSE_TYPE.SHEATH_KNIFE then
 		s_util.CastSkill(16027,false)								--施放刀啸风吟
 	end
 end
-```
