@@ -2,7 +2,7 @@
 ====================================
 配套软件下载 https://pan.baidu.com/s/18cC8pGu64OkRCpwdxlsxyA<br>
 扣扣群：511064247<br>
-编写宏推荐支持Lua语法高亮的编辑器：vs code，Notepad++，EditPlus（要添加插件）等等，比较容易发现语法错误。<br>
+编写宏最好用支持Lua语法高亮的文本编辑器，推荐Notepad++。vs code 和 EditPlus 添加了插件也可以，这样比较容易发现语法错误。<br>
 
 ## 目录
   * [宏](#宏)
