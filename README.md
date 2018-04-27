@@ -268,7 +268,7 @@ local puppet = s_util.GetPuppet()
 | nCurrentMana | 当前内力
 | nMaxMana | 最大内力
 | nCurrentRage | 苍云怒气，霸刀狂意
-| nCurrentEnergy | 霸刀刀魂
+| nCurrentEnergy | 霸刀刀魂，唐门神机值
 | nAccumulateValue | 少林禅那，纯阳气点，七秀剑舞层数
 | nCurrentSunEnergy | 日灵（是看到的100倍），霸刀气劲
 | nCurrentMoonEnergy | 月灵（是看到的100倍）
