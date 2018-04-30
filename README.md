@@ -257,6 +257,44 @@ local puppet = s_util.GetPuppet()
 没有参数。<br>
 没有返回值。<br>
 
+---
+#### s_util.QuestIsAccept
+描述：是否已接受指定任务。<br>
+1个参数：任务ID。<br>
+1个返回值：true或false。<br>
+
+---
+#### s_util.QuestIsFinish
+描述：指定任务是否可交。<br>
+1个参数：任务ID。<br>
+1个返回值：true或false。<br>
+
+---
+#### s_util.QuestIsFail
+描述：指定任务是否已失败。<br>
+1个参数：任务ID。<br>
+1个返回值：true或false。<br>
+
+---
+#### util.QuestCheckKill
+描述：检查指定任务杀怪条件是否完成。<br>
+2个参数：任务ID，索引。<br>
+1个返回值：true或false。<br>
+
+---
+#### util.QuestCheckItem
+描述：检查指定任务需要物品是否完成。<br>
+2个参数：任务ID，索引。<br>
+1个返回值：true或false。<br>
+
+---
+#### util.QuestCheckState
+描述：检查指定任务状态条件是否完成。<br>
+2个参数：任务ID，索引。<br>
+1个返回值：true或false。<br>
+
+
+---
 ### Player对象
 自己和其他玩家都是Player对象。以下示例假设变量player是一个Player对象。
 
