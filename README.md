@@ -233,7 +233,7 @@ end
 ```
 
 ---
-### s_util.UseItem
+#### s_util.UseItem
 描述：使用背包物品。<br>
 2个参数：id1，id2。<br>
 1个返回值：成功true，否则false。（不成功的原因可能是没有该物品或者物品还没冷却）<br>
