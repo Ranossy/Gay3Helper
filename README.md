@@ -542,7 +542,14 @@ s_cmd.WaitFor(1000)
 ---
 #### s_cmd.InteractDoodad
 描述：交互DOODAD。<br>
-2个参数：模板ID，距离（尺）。<br>
+1个参数：模板ID。<br>
+说明：交互6尺内指定模板ID的Doodad一次。
+
+---
+#### s_cmd.InteractDoodadEx
+描述：交互DOODAD。<br>
+4个参数：模板ID， 范围（尺）， 表达式（可选）， 标号（如果有表达式，必须指定，否则不需要）。<br>
+说明：交互指定范围内的Doodad，如果距离大于6尺，会向Doodad移动。指定范围内没有指定的Doodad下一条命令。如果表达式为真，跳转到指定标号。<br>
 
 ---
 ### 任务
