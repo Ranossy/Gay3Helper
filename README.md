@@ -606,7 +606,7 @@ s_cmd.WaitFor(1000)
 2个参数：物品ID1， 物品ID2。<br>
 
 ---
-###交易行
+### 交易行
 
 ---
 #### s_cmd.AuctionBuy
