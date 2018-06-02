@@ -75,6 +75,13 @@ if target and targetClass == TARGET.PLAYER then
  ...
 end
 ```
+
+---
+#### SetTarget
+描述：设置自己的当前目标。<br>
+2个参数：类型（TARGET.NPC或TARGET.PLAYER）， NPC或者玩家对象ID。<br>
+没有返回值。<br>
+
 ---
 #### IsEnemy
 描述：判断两个对象是不是敌对关系<br>
