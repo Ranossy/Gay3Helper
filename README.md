@@ -263,14 +263,14 @@ end
 ```
 
 ---
-#### util.GetTeamMember
+#### s_util.GetTeamMember
 描述：获取团队中血量百分比最少的玩家。<br>
 1个参数：距离（缺省20尺）。<br>
 1个返回值：队伍或团队中血量百分比最少的玩家对象，当前没有队伍返回nil。<br>
 示例:
 ```Lua
 --获取20尺内血量百分比最少的队友
-local partner = GetTeamMember()
+local partner = s_util.GetTeamMember()
 ```
 
 ---
