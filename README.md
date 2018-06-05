@@ -641,6 +641,31 @@ s_cmd.WaitFor(1000)
 2个参数：物品ID1， 物品ID2。<br>
 
 ---
+#### s_cmd.OpenBox
+描述： 打开盒子物品。<br>
+2个参数： 物品ID1， 物品ID2。<br>
+
+---
+#### s_cmd.GetLevelAward
+描述： 领取等级礼包。<br>
+1个参数: 索引（1-10)。<br>
+
+---
+#### s_cmd.DailySign
+描述： 每日签到。<br>
+没有参数。<br>
+
+---
+#### s_cmd.ReadAllBook
+描述： 阅读背包中所有没有读过的书籍。<br>
+没有参数。<br>
+
+---
+#### s_cmd.ExchangeEquip
+描述： 切换装备。<br>
+1个参数：索引（1-4）。<br>
+
+---
 ### 交易行
 
 ---
