@@ -92,7 +92,7 @@ end
 ---
 #### s_util.GetBuffInfo
 描述：返回指定对象的buff数据表。<br>
-2个参数：Player或者NPC对象， 是否值返回自己造成的buff（可选，缺省false）。<br>
+2个参数：Player或者NPC对象， 是否只返回自己造成的buff（可选，缺省false）。<br>
 1个返回值：buff数据表。键是buffid，值是指定id的buff数据。<br>
 buff数据是如下结构的表：<br>
 
