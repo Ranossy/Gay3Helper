@@ -92,7 +92,7 @@ end
 ---
 #### s_util.GetBuffInfo
 描述：返回指定对象的buff数据表。<br>
-1个参数：Player或者NPC对象。<br>
+2个参数：Player或者NPC对象， 是否值返回自己造成的buff（可选，缺省false）。<br>
 1个返回值：buff数据表。键是buffid，值是指定id的buff数据。<br>
 buff数据是如下结构的表：<br>
 
@@ -120,11 +120,6 @@ if not TargetBuff[123] then
  ...
 end
 
---没有指定buff或者不是我造成的
-if not TargetBuff[123] or TargetBuff[123].dwSkillSrcID ~= player.dwID then
- ...
-end
-
 --有指定buff，并且层数大于3
 if TargetBuff[123] and TargetBuff[123].nStackNum > 3 then
  ...
@@ -135,10 +130,8 @@ if TargetBuff[123] and TargetBuff[123].nLeftTime > 1.5 then
  ...
 end
 
---没有指定buff，或者剩余时间小于等于0.5秒，或者不是我造成的
-if not TargetBuff[123] or TargetBuff[123].nLeftTime <= 0.5 or TargetBuff[123].dwSkillSrcID ~= player.dwID then
- ...
-end
+--返回我对目标造成的buff数据
+local TargetBuffByMe = s_util.GetBuffInfo(target, true)
 ```
 `注意：判断buff数据的其他信息之前必须先判断有没有这个buff，否则Lua会报错试图索引一个nil值。`
 
