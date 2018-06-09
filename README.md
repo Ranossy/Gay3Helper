@@ -284,7 +284,16 @@ local target, teamHP = s_util.GetTeamMember()
 #### util.GetNpcHatred
 描述： 获取NPC对象对自己的仇恨。<br>
 1个参数：NPC对象。<br>
-1个返回值：仇恨百分比。<br>
+1个返回值：仇恨百分比。获取失败返回nil。<br>
+说明：当前目标才能获取仇恨数据。当前没有目标、仇恨数据还没同步到客户端、仇恨列表中没有自己都会获取失败。所以要先判断是否获取到，然后再判断数值。<br>
+示例：<br>
+```Lua
+--如果仇恨大于90%
+local hatread = util.GetNpcHatred(target)
+if hatread and hatread > 0.9 then
+ ...
+end
+```
 
 ---
 #### Jump
