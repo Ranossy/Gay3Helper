@@ -274,6 +274,19 @@ local target, teamHP = s_util.GetTeamMember()
 ```
 
 ---
+#### GetNpcIntensity
+描述：获取NPC强度。<br>
+1个参数：NPC对象。<br>
+1个返回值： 强度。 （1普通, 2精英, 3头目, 4BOSS）。<br>
+说明： 如果参数不是NPC对象，返回1。<br>
+
+---
+#### util.GetNpcHatred
+描述： 获取NPC对象对自己的仇恨。<br>
+1个参数：NPC对象。<br>
+1个返回值：仇恨百分比。<br>
+
+---
 #### Jump
 描述：跳（和按下空格效果相同）。<br>
 没有参数。<br>
