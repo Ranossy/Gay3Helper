@@ -66,7 +66,7 @@ s_Output(player.szName, player.nLevel)
 ---
 #### s_util.GetTarget
 描述：获取对象的当前目标。<br>
-1个参数：对象。<br>
+1个参数：NPC或玩家对象。<br>
 2个返回值：没有目标返回nil。否则返回目标对象，目标对象类型（[TARGET](#target) 类型的枚举值）。<br>
 示例：
 ```Lua
