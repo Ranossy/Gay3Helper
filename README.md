@@ -1,6 +1,6 @@
 宏和脚本编写说明
 ====================================
-配套软件下载 https://pan.baidu.com/s/18cC8pGu64OkRCpwdxlsxyA<br>
+配套软件下载 https://pan.baidu.com/s/11QH_3XMKVoVLY1Mk98_YrQ<br>
 扣扣群：511064247<br>
 编写宏最好用支持Lua语法高亮的文本编辑器，推荐Notepad++。vs code 和 EditPlus 添加了插件也可以，这样比较容易发现语法错误。<br>
 
