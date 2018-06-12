@@ -283,7 +283,7 @@ local target, teamHP = s_util.GetTeamMember()
 说明： 如果参数不是NPC对象，返回1。<br>
 
 ---
-#### util.GetNpcHatred
+#### s_util.GetNpcHatred
 描述： 获取NPC对象对自己的仇恨。<br>
 1个参数：NPC对象。<br>
 1个返回值：仇恨百分比。获取失败返回nil。<br>
@@ -291,7 +291,7 @@ local target, teamHP = s_util.GetTeamMember()
 示例：<br>
 ```Lua
 --如果仇恨大于90%
-local hatread = util.GetNpcHatred(target)
+local hatread = s_util.GetNpcHatred(target)
 if hatread and hatread > 0.9 then
  ...
 end
@@ -329,19 +329,19 @@ end
 1个返回值：true或false。<br>
 
 ---
-#### util.QuestCheckKill
+#### s_util.QuestCheckKill
 描述：检查指定任务杀怪条件是否完成。<br>
 2个参数：任务ID，索引。<br>
 1个返回值：true或false。<br>
 
 ---
-#### util.QuestCheckItem
+#### s_util.QuestCheckItem
 描述：检查指定任务需要物品是否完成。<br>
 2个参数：任务ID，索引。<br>
 1个返回值：true或false。<br>
 
 ---
-#### util.QuestCheckState
+#### s_util.QuestCheckState
 描述：检查指定任务状态条件是否完成。<br>
 2个参数：任务ID，索引。<br>
 1个返回值：true或false。<br>
