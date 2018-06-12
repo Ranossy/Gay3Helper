@@ -298,7 +298,7 @@ end
 ```
 
 ---
-#### util.GetShadow
+#### s_util.GetShadow
 描述：获取长歌影子数据。<br>
 没有参数。<br>
 1个返回值：影子数量。<br>
