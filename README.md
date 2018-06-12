@@ -810,6 +810,11 @@ s_cmd.Goto("开始")
 #### s_cmd.SendChat
 描述： 发送聊天信息。<br>
 1个参数： 聊天信息文本。<br>
+示例:<br>
+```
+--地图频道喊话
+s_cmd.SendChat("/y Hello World!")
+```
 
 ---
 #### s_cmd.SwitchMap
