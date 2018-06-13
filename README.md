@@ -377,6 +377,7 @@ end
 | nCurrentStamina | 精力
 | nCurrentThew | 体力
 | nCamp | 阵营（0中立，1浩气，2恶人）
+| bOnHorse | 是否在马上
 
 ### NPC对象
 | 成员变量 | 描述
