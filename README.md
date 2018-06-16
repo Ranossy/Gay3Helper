@@ -604,17 +604,19 @@ s_cmd.LoadScript("脚本.txt", "标号")
 ---
 #### s_cmd.InteractNpc
 描述：交互NPC。<br>
-1个参数：NPC模板ID。<br>
+3个参数：NPC模板ID，范围（可选，缺省10尺），等待对话面板打开（可选，false等待，true不等待）<br>
 
 ---
 #### s_cmd.SelectTalk
 描述：选择对话项。<br>
 1个参数：索引或者文本。<br>
+说明：需要先用 s_cmd.InteractNpc 命令交互NPC。<br>
 
 ---
 #### s_cmd.CheckDialogText
 描述：判断对话面板是否有指定文本。如果有跳转到指定标号。<br>
 2个参数：文本，标号。<br>
+说明：需要先用 s_cmd.InteractNpc 命令交互NPC。<br>
 
 ---
 #### s_cmd.InteractDoodad
