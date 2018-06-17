@@ -21,6 +21,7 @@
     * [交易行](#交易行)
     * [战斗和技能](#战斗和技能)
     * [其他命令](#其他命令)
+    * [全局变量](#全局变量)
  * [台服版使用说明](#台服版使用说明)
 
 ## 宏
@@ -838,14 +839,14 @@ s_cmd.SwitchMap("洛道")
 
 ---
 #### s_tConfigVar.bRevive
-描述：是否回营地复活。缺省值为false。
+描述：是否回营地复活。缺省值为false。<br>
 说明：脚本运行中，如果角色死亡会自动复活。如果当前地图不能原地复活（比如在副本内），直接回营地复活。如果当前地图可原地复活，判断这个变量，如果为false，原地复活，如果为true，回营地复活。如果是回营地复活，复活后会检查脚本中是否有 "复活点" 标号，如果有就跳转到这个标号。<br>
 示例：<br>
 ```Lua
 --自绝经脉回营地
-s_tConfigVar.bRevive = true s_cmd.Next()
-s_cmd.UseSkill(608, true)
-s_tConfigVar.bRevive = false s_cmd.Next()
+s_tConfigVar.bRevive = true s_cmd.Next()  --设置回营地复活
+s_cmd.UseSkill(608, true)                 --自绝经脉
+s_tConfigVar.bRevive = false s_cmd.Next() --设定原地复活
 ```
 
 ---
