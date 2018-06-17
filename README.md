@@ -347,6 +347,11 @@ end
 2个参数：任务ID，索引。<br>
 1个返回值：true或false。<br>
 
+---
+#### s_util.GetMapID
+描述：获取当前所在地图ID。<br>
+没有参数。<br>
+1个返回值：当前地图ID。<br>
 
 ---
 ### Player对象
