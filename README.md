@@ -833,6 +833,22 @@ s_cmd.SwitchMap("洛道")
 ```
 
 ---
+### 全局变量
+以下全局变量用于配置脚本的一些选项。<br>
+
+---
+#### s_tConfigVar.bRevive
+描述：是否回营地复活。缺省值为false。
+说明：脚本运行中，如果角色死亡会自动复活。如果当前地图不能原地复活（比如在副本内），直接回营地复活。如果当前地图可原地复活，判断这个变量，如果为false，原地复活，如果为true，回营地复活。如果是回营地复活，复活后会检查脚本中是否有 "复活点" 标号，如果有就跳转到这个标号。<br>
+示例：<br>
+```Lua
+--自绝经脉回营地
+s_tConfigVar.bRevive = true s_cmd.Next()
+s_cmd.UseSkill(608, true)
+s_tConfigVar.bRevive = false s_cmd.Next()
+```
+
+---
 ## 台服版使用说明
 把 X:\你台服版的安装目录\bin\zhtw_hd\ 文件夹下的 gameupdater.exe 改名为 gameupdater2.exe， 把软件目录下的 gameupdater.exe 复制到这个位置，然后启动台服登录游戏的软件，和正常流程一样启动游戏。首次运行会有选择配套软件所在目录的对话框，选择手残党台服版目录下的m.exe。<br>
 注意：台服版的宏和脚本， 要保存为不带 BOM 的 UTF-8 编码（不明白自行百度）， 不然会乱码， 脚本还可能不正常（比如打开商店的商店名）。<br>
