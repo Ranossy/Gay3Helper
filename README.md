@@ -846,7 +846,7 @@ s_cmd.SwitchMap("洛道")
 --自绝经脉回营地
 s_tConfigVar.bRevive = true s_cmd.Next()  --设置回营地复活
 s_cmd.UseSkill(608, true)                 --自绝经脉
-s_tConfigVar.bRevive = false s_cmd.Next() --设定原地复活
+s_tConfigVar.bRevive = false s_cmd.Next() --设置原地复活
 ```
 
 ---
