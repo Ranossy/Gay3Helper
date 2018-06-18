@@ -378,9 +378,9 @@ end
 1个返回值：指定位置物品的冷却剩余时间（单位：秒）。<br>
 ```Lua
 --假设物品的ID为 5, 11111
-local item, bag, pos = util.FindItem(5, 11111)
+local item, bag, pos = s_util.FindItem(5, 11111)
 --如果有指定物品，并且冷却时间小于0.5秒
-if item and util.GetItemCD(bag, pos) < 0.5 then
+if item and s_util.GetItemCD(bag, pos) < 0.5 then
    ...
 end
 ```
