@@ -354,6 +354,12 @@ end
 1个返回值：当前地图ID。<br>
 
 ---
+#### s_util.GetBagSize
+描述：获取背包信息。<br>
+没有参数。<br>
+2个返回值：空闲位置数量，总数量<br>
+
+---
 ### Player对象
 自己和其他玩家都是Player对象。以下示例假设变量player是一个Player对象。
 
