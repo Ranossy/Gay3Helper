@@ -360,6 +360,32 @@ end
 2个返回值：空闲位置数量，总数量<br>
 
 ---
+#### s_util.GetItemCount
+描述：获取背包指定物品的数量。<br>
+2个参数：物品ID1，物品ID2。<br>
+1个返回值:数量，没有指定物品返回0。<br>
+
+---
+#### s_util.FindItem
+描述：查找背包物品。<br>
+2个参数：物品ID1，物品ID2。<br>
+3个返回值：Item对象（没有指定物品返回nil），背包索引，位置索引。<br>
+
+---
+#### s_util.GetItemCD
+描述：获取物品冷却时间。<br>
+2个参数：背包索引，位置索引。<br>
+1个返回值：指定位置物品的冷却剩余时间（单位：秒）。<br>
+```Lua
+--假设物品的ID为 5, 11111
+local item, bag, pos = util.FindItem(5, 11111)
+--如果有指定物品，并且冷却时间小于0.5秒
+if item and util.GetItemCD(bag, pos) < 0.5 then
+   ...
+end
+```
+
+---
 ### Player对象
 自己和其他玩家都是Player对象。以下示例假设变量player是一个Player对象。
 
