@@ -12,6 +12,7 @@
     * [Player对象](#player对象)
     * [NPC对象](#npc对象)
     * [枚举值和常量](#枚举值和常量)
+    * [其他常用示例](#其他常用示例)
   * [脚本](#脚本)
     * [基础命令](#基础命令)
     * [移动和交通](#移动和交通)
@@ -67,7 +68,7 @@ s_Output(player.szName, player.nLevel)
 ---
 #### s_util.GetTarget
 描述：获取对象的当前目标。<br>
-1个参数：NPC或玩家对象（可选，缺省是自己）。<br>
+1个参数：NPC或玩家对象。<br>
 2个返回值：没有目标返回nil。否则返回目标对象，目标对象类型（[TARGET](#target) 类型的枚举值）。<br>
 示例：
 ```Lua
@@ -520,6 +521,27 @@ end
 | SHEATH_KNIFE | 霸刀 雪絮金屏
 | DOUBLE_BLADE | 霸刀 松烟竹雾
 
+---
+### 其他常用示例
+```Lua
+--获取自己的玩家对象，没有进入游戏会返回nil
+local player = GetClientPlayer()
+
+--没有自己的玩家对象直接返回，没有继续的必要了
+if not player then return end
+
+--获取自己的当前目标数据
+local target, targetClass = s_util.GetTarget(player)
+
+--获取目标的目标数据
+local ttarget, ttargetClass = s_util.GetTarget(target)
+
+--如果目标的目标是自己
+if ttarget and ttarget.dwID == player.dwID then
+ ...
+end
+
+```
 
 
 ## 脚本
