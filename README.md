@@ -399,6 +399,10 @@ local warnmsg = s_util.GetWarnMsg()
 if warnmsg == "报九枫吹奏手中长笛，潜入水下可隔绝笛音！" then
  ...
 end
+--查找字串，更好些，上面的完全相等，稍微复制错少个标点什么的就不行了
+if string.find(warnmsg, "报九枫吹奏手中长笛") then
+ ...
+end
 ```
 
 
