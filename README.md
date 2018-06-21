@@ -387,6 +387,23 @@ end
 ```
 
 ---
+#### s_util.GetWarnMsg
+描述：获取警告信息。<br>
+没有参数。<br>
+1个返回值：警告信息文本。<br>
+说明：获取一次后，在游戏中没有再次出现警告信息的情况下，返回的是空串。<br>
+示例：
+```Lua
+--判断战兽山老一的警告信息
+local warnmsg = s_util.GetWarnMsg()
+if warnmsg == "报九枫吹奏手中长笛，潜入水下可隔绝笛音！" then
+ ...
+end
+```
+
+
+
+---
 ### Player对象
 自己和其他玩家都是Player对象。以下示例假设变量player是一个Player对象。
 
