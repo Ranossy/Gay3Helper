@@ -575,6 +575,10 @@ end
 --后跳技能（不是迎风回浪）
 s_util.CastSkill(9007, false)
 
+--如果在马上，就下马
+if player.bOnHorse then
+ RideHorse()
+end
 
 ```
 
