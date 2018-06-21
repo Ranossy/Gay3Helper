@@ -405,6 +405,11 @@ if string.find(warnmsg, "报九枫吹奏手中长笛") then
 end
 ```
 
+---
+#### GetTickCount
+描述：获取当前时间（毫秒）。<br>
+没有参数。<br>
+1个返回值：游戏启动后到当前的毫秒数。<br>
 
 
 ---
