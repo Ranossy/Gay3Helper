@@ -254,8 +254,28 @@ end
 ```Lua
 local TempID, Puppet = s_util.GetPuppet()
 
+--如果没有机关，自己脚下放千机变
+if not TempID then
+ s_util.CastSkill(3109, true)
+end
+
+--如果是底座，变形毒煞
+if TempID == 16174 then
+ s_util.CastSkill(3370, false)
+end
+
 --如果是连弩
 if TempID == 16175 then
+  ...
+end
+
+--如果是重弩
+if TempID == 16176 then
+  ...
+end
+
+--如果是毒煞
+if TempID == 16177 then
   ...
 end
 
