@@ -431,6 +431,25 @@ end
 没有参数。<br>
 1个返回值：游戏启动后到当前的毫秒数。<br>
 
+---
+#### s_util.SetTimer
+描述：设置计时器。<br>
+1个参数： 计时器名。<br>
+没有返回值。<br>
+
+---
+#### s_util.GetTimer
+描述：获取计时器。<br>
+1个参数：计时器名。<br>
+1个返回值： 指定计时器从上次设置到当前时间的间隔（毫秒）。<br>
+示例：
+```Lua
+--比如某些操作至少间隔1秒
+if s_util.GetTimer("aaa") > 1000 then
+ ...
+ s_util.SetTimer("aaa")
+end
+```
 
 ---
 ### Player对象
